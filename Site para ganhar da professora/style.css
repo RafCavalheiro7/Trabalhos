@@ -1,0 +1,104 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  padding: 1%;
+  margin: 10px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+#contaUsuario {
+  position: relative;
+  justify-content:flex-end;
+  width: 250%;
+  height: 80%;
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+  font-size: larger;
+  width: 50%;
+  height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	
+}
+.imgDracao{
+	padding-left: 30em;
+}
+
+center {
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #000;
+}
+
+#generos {
+  width: 100%;
+  max-width: 964px;
+  position: relative;
+}
+
+#carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+#carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+#prev,
+#next {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: white;
+  border: none;
+  padding-bottom: 40px;
+  padding: 8px;
+  border-radius: 50%;
+  outline: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+#prev {
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  display: none;
+}
+
+#next {
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+#content {
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-flow: column;
+  margin: 100px;
+  box-sizing: border-box;
+}
+
+.item {
+  
+  border-radius:100%;
+  width: 200px;
+  height: 200px;
+  background: green;
+}
